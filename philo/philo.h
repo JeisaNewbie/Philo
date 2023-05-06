@@ -6,7 +6,7 @@
 /*   By: jhwang2 <jhwang2@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/18 11:23:03 by jhwang2           #+#    #+#             */
-/*   Updated: 2023/05/04 18:06:46 by jhwang2          ###   ########.fr       */
+/*   Updated: 2023/05/06 16:55:36 by jhwang2          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -84,6 +84,7 @@ int			malloc_fork_mutex(t_data *data);
 t_philo		**malloc_philo(t_data *data);
 int			check_vaild(int argc, char **argv);
 int			check_argument(char **argv);
+int			check_integer(char **argv);
 void		print_takef(t_data *data, t_philo *philo, int id, char *str);
 void		print_status(t_data *data, t_philo *philo, int id, char *str);
 void		rm_mutex_all(t_data *data, int end);

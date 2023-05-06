@@ -6,7 +6,7 @@
 /*   By: jhwang2 <jhwang2@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/18 10:01:55 by jhwang2           #+#    #+#             */
-/*   Updated: 2023/04/18 10:01:55 by jhwang2          ###   ########.fr       */
+/*   Updated: 2023/05/06 17:09:02 by jhwang2          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,9 +62,9 @@ int	p_atoi(const char *str)
 	while (str[i] >= '0' && str[i] <= '9')
 	{
 		result = result * 10 + str[i] - '0';
-		if ((result > 9223372036854775807) && (sign == 1))
+		if ((result > 2147483647) && (sign == 1))
 			return (-1);
-		if ((result > 9223372036854775808UL) && (sign == -1))
+		if ((result > 2147483647) && (sign == -1))
 			return (0);
 		i++;
 	}

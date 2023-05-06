@@ -6,7 +6,7 @@
 /*   By: jhwang2 <jhwang2@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/27 14:13:55 by jhwang2           #+#    #+#             */
-/*   Updated: 2023/05/06 13:40:16 by jhwang2          ###   ########.fr       */
+/*   Updated: 2023/05/06 17:03:34 by jhwang2          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,7 @@
 # include <stdio.h>
 # include <stdlib.h>
 # include <sys/time.h>
-# include <sys/wait.h>
 # include <unistd.h>
-# include <string.h>
 # include <signal.h>
 
 typedef struct s_sem
@@ -59,6 +57,7 @@ typedef struct s_data
 //---------------------------main.c
 int			check_vaild(int argc, char **argv);
 int			check_argument(char **argv);
+int			check_integer(char **argv);
 int			creat_sem(t_data *philos);
 //---------------------------wait_and_kill.c
 

@@ -6,7 +6,7 @@
 #    By: jhwang2 <jhwang2@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/04/29 17:16:37 by jhwang2           #+#    #+#              #
-#    Updated: 2023/05/06 13:17:38 by jhwang2          ###   ########.fr        #
+#    Updated: 2023/05/06 17:02:10 by jhwang2          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,6 +18,7 @@ LIBC		=	ar rcs
 CFLAGS		=	-Wall -Wextra -Werror
 SRCS		=	main.c \
 				init.c \
+				check_error.c \
 				malloc.c \
 				start_philo.c \
 				do_routine.c \

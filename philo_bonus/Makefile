@@ -6,7 +6,7 @@
 #    By: jhwang2 <jhwang2@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/04/29 17:19:40 by jhwang2           #+#    #+#              #
-#    Updated: 2023/05/06 16:36:52 by jhwang2          ###   ########.fr        #
+#    Updated: 2023/05/06 17:03:59 by jhwang2          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,6 +18,7 @@ LIBC		=	ar rcs
 CFLAGS		=	-Wall -Wextra -Werror
 BONUS_SRCS	=	main.c \
 				init.c \
+				check_error.c \
 				fork.c \
 				close_sem.c \
 				do_routine.c \
